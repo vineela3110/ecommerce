@@ -1,0 +1,134 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar Styles */
+.header {
+    background-color: #300d20;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li {
+    font-size: 18px;
+}
+
+.nav-links a {
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #edeaf2;
+}
+
+.auth-links {
+    display: flex;
+    gap: 15px;
+}
+
+.auth-btn {
+    background-color: #560456b1;
+    color: #ece4e8;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.auth-btn:hover {
+    background-color: #941e94b1;
+    color: white;
+}
+
+.logo h1 {
+    font-size: 28px;
+    color: white;
+}
+
+/* Prevent content from being hidden behind the navbar */
+body {
+    padding-top: 70px; /* Adjust based on the navbar height */
+}
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Success Message Card */
+.success-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 300px;
+}
+
+.success-card h2 {
+    color: #f7a902;
+    font-size: 20px;
+}
+
+.success-card p {
+    font-size: 14px;
+    color: #1b1407b8;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Back Button */
+.back-btn {
+    display: inline-block;
+    background-color: #fb8c05;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.back-btn:hover {
+    background-color: #e87509d7;
+}

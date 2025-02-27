@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Cart UI</title>
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: #333;
+            color: white;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Cart Icon */
+        .cart-container {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .cart-icon {
+            font-size: 24px;
+            position: relative;
+        }
+
+        /* Cart Badge */
+        .cart-count {
+            background: red;
+            color: white;
+            border-radius: 50%;
+            padding: 3px 8px;
+            font-size: 12px;
+            position: absolute;
+            top: -5px;
+            right: -10px;
+        }
+
+        /* Cart Dropdown */
+        .cart-dropdown {
+            display: none;
+            position: absolute;
+            right: 0;
+            top: 30px;
+            background: white;
+            width: 200px;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+            color: black;
+        }
+
+        /* Show Cart on Hover */
+        .cart-container:hover .cart-dropdown {
+            display: block;
+        }
+
+        /* Product Cards */
+        .product-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+            gap: 20px;
+        }
+
+        .product-card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            width: 200px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .add-to-cart-btn {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 8px 10px;
+            cursor: pointer;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="logo">
+            <h1>Beauty Shop</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        
+        <!-- Cart Icon -->
+        <div class="cart-container">
+            <span class="cart-icon">🛒</span>
+            <span class="cart-count">2</span> <!-- Static Count -->
+            
+            <!-- Cart Dropdown -->
+            <div class="cart-dropdown">
+                <p><strong>Added Items:</strong></p>
+                <p>✅ Sunscreen - $15.99</p>
+                <p>✅ Serum - $19.99</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Product Listing -->
+    <div class="product-container">
+        <div class="product-card">
+            <h3>Sunscreen</h3>
+            <p>$15.99</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <h3>Serum</h3>
+            <p>$19.99</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+
+        <div class="product-card">
+            <h3>Facewash</h3>
+            <p>$10.99</p>
+            <button class="add-to-cart-btn">Add to Cart</button>
+        </div>
+    </div>
+
+</body>
+</html>

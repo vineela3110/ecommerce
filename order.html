@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>orderpage</title>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Beauty Shop</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="http://127.0.0.1:5501/beauty.html">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="http://127.0.0.1:5501/about.html">About Us</a></li>
+                <li><a href="http://127.0.0.1:5501/contact.html">Contact</a></li>
+            </ul>
+            <div class="auth-links">
+                <button class="auth-btn" id="login-btn"><a href="http://127.0.0.1:5501/login.html">LOGIN</a></button>
+          
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="order-section">
+        <div class="order-container">
+            <h2>Place Your Order</h2>
+            <p>Fill in the details below to complete your purchase.</p>
+            
+           
+            <!-- Order Form -->
+            <form action="#" method="POST" class="order-form" id="order-form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <label for="address">Shipping Address</label>
+                <textarea id="address" name="address" rows="3" placeholder="Enter your shipping address" required></textarea>
+                
+                <label for="product">Select Product</label>
+                <select id="product" name="product" required>
+                    <option value="" disabled selected>Choose a product</option>
+                    <option value="sunscreen">Sunscreen - 1599</option>
+                    <option value="serum">Serum - 1999</option>
+                    <option value="facewash">Facewash - 1099</option>
+                    <option value="lip-balm">Lip Balm - 599</option>
+                    <option value="moisturizer">Moisturizer - 1299</option>
+                    <option value="face-mask">Face Mask - 899</option>
+                    <option value="toner">Toner - 799</option>
+                    <option value="body-lotion">Body Lotion - 1399</option>
+                    <option value="hair-oil">Hair Oil - 999</option>
+                    <option value="shampoo">Shampoo - 1199</option>
+                    <option value="conditioner">Conditioner - 1099</option>
+                    <option value="lipstick">Lipstick - 1499</option>
+                    <option value="eyeliner">Eyeliner - 999</option>
+                    <option value="foundation">Foundation - 1899</option>
+                    <option value="highlighter">Highlighter - 1699</option>
+                </select>
+
+                <label for="payment">Payment Method</label>
+                <select id="payment" name="payment" required>
+                    <option value="" disabled selected>Choose payment method</option>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="cod">Cash on Delivery</option>
+                </select>
+
+                <button type="submit" class="order-btn"><a href="http://127.0.0.1:5501/suc.html">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+   
+</body>
+</html>
